@@ -1,0 +1,136 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Osiguranje vozila</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            width: 100%;
+            height: 366px;
+        }
+        .style2
+        {
+            height: 60px;
+        }
+        .style4
+        {
+            width: 333px;
+        }
+        .style5
+        {
+            height: 65px;
+        }
+        .style7
+        {
+            width: 35px;
+        }
+        .style8
+        {
+            width: 111px;
+            height: 23px;
+        }
+        .style9
+        {
+            width: 111px;
+        }
+        .style10
+        {
+            width: 126%;
+        }
+        .style11
+        {
+            width: 2px;
+        }
+        .style12
+        {
+            width: 1004px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <br />
+    </div>
+        <table class="style1" width="100%">
+            <tr>
+                <td class="style7" rowspan="10" style="background-color: #FFFFFF" height="100%" 
+                    bgcolor="White">
+                    &nbsp;</td>
+                <td class="style5" colspan="2" bgcolor="#FFFF66">
+                    <asp:Image ID="Image1" runat="server" Height="136px" 
+                        ImageUrl="~/Slike/Header.jpg" Width="1000px" />
+                </td>
+                <td rowspan="10" style="background-color: #FFFFFF" width="80px" height="100%" 
+                    bgcolor="White">
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td class="style2" colspan="2" bgcolor="#FFFF66">
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td class="style9" align="center" bgcolor="#FFFF66">
+                    &nbsp;</td>
+                <td class="style4" rowspan="8">
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+            <tr>
+                <td class="style9" align="center" bgcolor="#FFFF66">
+                    <asp:HyperLink ID="HyperLink7" runat="server" NavigateUrl="~/Home.aspx">Home</asp:HyperLink>
+                </td>
+            </tr>
+            <tr>
+                <td class="style9" align="center" bgcolor="#FFFF66">
+                    <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/KorisnikW.aspx">Klijenti</asp:HyperLink>
+                </td>
+            </tr>
+            <tr>
+                <td class="style8" align="center" bgcolor="#FFFF66">
+                    <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/Vozilo.aspx">Sklapanje 
+                    polise</asp:HyperLink>
+                </td>
+            </tr>
+            <tr>
+                <td class="style9" align="center" bgcolor="#FFFF66">
+                    <asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="~/Cenovnik.aspx">Cenovnik</asp:HyperLink>
+                </td>
+            </tr>
+            <tr>
+                <td class="style8" align="center" bgcolor="#FFFF66">
+                    <asp:HyperLink ID="HyperLink6" runat="server" NavigateUrl="~/Kontakt.aspx">Kontaktirajte 
+                    nas</asp:HyperLink>
+                </td>
+            </tr>
+            <tr>
+                <td class="style9" bgcolor="#FFFF66">
+                    <asp:HyperLink ID="HyperLink4" runat="server" ImageUrl="~/Slike/google1.jpg" 
+                        NavigateUrl="http://www.google.com/" Target="_blank" Font-Size="XX-Large">HyperLink</asp:HyperLink>
+                </td>
+            </tr>
+            <tr>
+                <td class="style9" bgcolor="#FFFF66">
+                    &nbsp;</td>
+            </tr>
+        </table>
+    <table class="style10">
+        <tr>
+            <td class="style11" bgcolor="White">
+                &nbsp;</td>
+            <td class="style12" bgcolor="White">
+                    Copyright © Altrax, Novi Sad             </td>
+            <td bgcolor="White">
+                &nbsp;</td>
+        </tr>
+    </table>
+    </form>
+</body>
+</html>
